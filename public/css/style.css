@@ -1,0 +1,16 @@
+@import url('http://fonts.cdnfonts.com/css/signpainter');
+
+body {
+    font-family: "SignPainter", sans-serif;
+    text-shadow:
+        -1px -1px 0 #000,
+        0   -1px 0 #000,
+        1px -1px 0 #000,
+        1px  0   0 #000,
+        1px  1px 0 #000,
+        0    1px 0 #000,
+        -1px  1px 0 #000,
+        -1px  0   0 #000;
+    color: white;
+    font-size: 3vw;    
+}

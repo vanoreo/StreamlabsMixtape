@@ -1,0 +1,15 @@
+{
+  "name": "streamlabsmixtape",
+  "version": "1.0.0",
+  "description": "A handy little utility that pipes audio file metadata from VLC playlists into a web browser so the info can be shown on stream",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {    
+    "express": "^4.17.1",    
+    "node-vlc-http": "^1.2.0"
+  }
+}
