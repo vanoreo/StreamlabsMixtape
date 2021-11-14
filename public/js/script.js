@@ -4,19 +4,14 @@ function doAjax() {
     $.ajax({
         type: 'GET',
         url: '/meta',
-        success: function(meta){                        
-            if (meta.artist){
-                $("#artist").text(meta.artist + " - ");
-            }   
-            else{
-                $("#artist").text(meta.artist);
-            }                     
-            if (meta.title){
-                $("#title").text("\"" + meta.title + "\"");    
-            }             
-            else{
-                $("#title").text(meta.title);
-            }                                        
+        success: function(meta){
+            // This is where you can modify exactly what data gets displayed, and where it goes
+            // By default it's just '♫ {artist} - "{title}"'
+            message = "";
+            if (meta.artist && meta.title){
+                message = "♫ " + meta.artist + " - \"" + meta.title + "\"";                                         
+            }
+            $("#message").text(message);
         },
         complete: function(meta){
             setTimeout(doAjax, interval)
